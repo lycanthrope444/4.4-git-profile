@@ -77,11 +77,7 @@
               <div class="row">
                 <!-- Dynamic Search Bar -->
                 <div class="staticbar">
-                  <a href="https://github.com/lycanthrope444">Overview</a>
-                  <a href="https://github.com/lycanthrope444?tab=repositories">Repositories <span>16</span></a>
-                  <a href="https://github.com/lycanthrope444?tab=stars">Stars <span>2</span></a>
-                  <a href="https://github.com/lycanthrope444?tab=followers">Followers <span>2</span></a>
-                  <a href="https://github.com/lycanthrope444?tab=following">Following <span>0</span></a>
+
                 </div>
               </div>
               <!-- Utility Bar -->
@@ -150,11 +146,21 @@
     </div>
     <script id="repo-template" type="text/x-handlebars-template">
       <div class="repo-template">
-        <h3>Repo Name</h3>
-        <span>Main Code</span>
+        <a href="{{ url }}"><h3>{{ name }}</h3></a>
+        <span>{{ language}}</span>
         <span>Last Update</span>
         <img src="https://unsplash.it/125/100" alt="">
       </div>
+    </script>
+    <script id="user-links" type="text/x-handlebars-template">
+      <div class="user-links">
+        <a href="{{ userOverview }}">Overview</a>
+        <a href="{{ userOverview }}">Repositories <span>{{ repoNum }}</span></a>
+        <a href="{{ userOverview }}">Stars <span>{{ starNum }}</span></a>
+        <a href="{{ userOverview }}">Followers <span>{{ followerNum }}</span></a>
+        <a href="{{ userOverview }}">Following <span>{{ followingNum }}</span></a>
+      </div>
+
     </script>
     <script src="js/bundle.js"></script>
   </body>
