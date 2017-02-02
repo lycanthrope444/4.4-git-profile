@@ -1,13 +1,15 @@
-var $ = require('jquery');
+var $ = window.$ = window.jQuery = require('jquery');
 var _ = require('underscore');
 var Handlebars = require('handlebars');
-var githubtoken = require('./gitapikey.js');
+require('bootstrap-sass');
+
+// var githubtoken = require('./gitapikey.js');
 
 //Send auth token to github if token is provided
-if(githubtoken !== undefined){
-  $.ajaxSetup({
-    headers: {
-      'Authorization': 'token' + githubtoken.token
-    }
-  });
-}
+// if(githubtoken !== undefined){
+//   $.ajaxSetup({
+//     headers: {
+//       'Authorization': 'token' + githubtoken.token
+//     }
+//   });
+// }
