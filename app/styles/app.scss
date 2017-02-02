@@ -18,3 +18,19 @@ $navbargray: #827A76;
 img {
   max-width: 100%;
 }
+
+.header{
+  background-color: $bannergray;
+}
+
+#repo-template{
+  width: 100%;
+}
+
+h3 {
+  display: inline-block;
+}
+
+#repo-template > img{
+  float: right;
+}
