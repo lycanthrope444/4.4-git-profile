@@ -35,6 +35,7 @@ $.ajax(personalInfoUrl).done(function(data){
   var sidebarInfo = {
     profilePic: data.avatar_url,
     email: data.email,
+    bio: data.bio,
     name: data.name,
     userName: data.login
   };
@@ -46,7 +47,10 @@ $.ajax(repoInfoUrl).done(function(data){
   console.log(data);
   var repoSource = $('#repo-template').html();
   var repoTemplate = Handlebars.compile(repoSource);
-  _.each(data, function(info){
+  var sortedRepos = _.sortBy(data, "updated_at");
+  _.last(sortedRepos, sortedRepos.length);
+  console.log(sortedRepos);
+  _.each(sortedRepos, function(info){
     var repoInfo = {
       name: info.name,
       url: info.url,

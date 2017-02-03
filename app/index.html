@@ -15,9 +15,9 @@
             <!-- Github Logo -->
             <img src="http://unsplash.it/50/50" alt="">
             <form action="submit" class="github-search">
-              <div class="col-xs-4 col-sm-4 col-md-4">
+              <!-- <div class="col-xs-4 col-sm-4 col-md-4"> -->
                 <input type="text" class="form-control" placeholder="Search GitHub">
-              </div>
+              <!-- </div> -->
             </form>
             <a href="#">Pull Requests</a>
             <a href="#">Issues</a>
@@ -56,16 +56,17 @@
       </div>
   <!-- Main Section -->
       <div class="container">
-        <div class="row">
+        <div class="main-spacer">
+          <div class="row">
             <!-- Sidebar -->
-            <div class="col-md-2 col-sm-2 col-xs-2">
+            <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="user-sidebar">
 
 
               </div>
             </div>
             <!-- Main Navigation -->
-            <div class="col-md-10 col-sm-10 col-xs-10">
+            <div class="col-md-9 col-sm-9 col-xs-9">
               <div class="row">
                 <!-- Dynamic Search Bar -->
                 <div class="staticbar">
@@ -117,9 +118,8 @@
                       <li role="separator" class="divider"></li>
                       <li><a href="#">Ruby</a></li>
                     </ul>
-                    <button type="button" class="btn btn-success new-repo">New</button>
-
                   </div>
+                  <button type="button" class="btn btn-success new-repo">New</button>
                 </div>
               </div>
               <!-- List of Repos -->
@@ -128,6 +128,7 @@
               </div>
             </div>
           </div>
+        </div>
         <!-- Footer -->
         <div class="row">
           <div class="col-md-12">
@@ -152,21 +153,21 @@
 
     <!-- User Info -->
     <script id="sidebar-info" type="text/x-handlebars-template">
-      <div class="row">
-        <img src="{{ profilePic }}" alt="">
-      </div>
-      <div class="row">
-        <span>{{ name }}</span>
-      </div>
-      <div class="row">
-        <span>{{ userName }}</span>
-      </div>
-      <div class="row">
-        <a href="#">Bio</a>
-      </div>
-      <div class="row">
-        <a href="#">{{ email }}</a>
-      </div>
+      <!-- <div class="row"> -->
+        <img class="profile-pic" src="{{ profilePic }}" alt="">
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <div class="name-holder">
+          <span class="sidebar-name">{{ name }}</span>
+          <span class="sidebar-user">{{ userName }}</span>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <span class="bio">{{ bio }}</span>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <a class="sidebar-email" href="#">{{ email }}</a>
+      <!-- </div> -->
     </script>
     <!-- Repo Template -->
     <script id="repo-template" type="text/x-handlebars-template">
@@ -184,10 +185,10 @@
     <script id="user-links" type="text/x-handlebars-template">
       <div class="user-links">
         <a href="{{ userOverview }}">Overview</a>
-        <a href="{{ userOverview }}">Repositories <span>{{ repoNum }}</span></a>
-        <a href="{{ userOverview }}">Stars <span>{{ starNum }}</span></a>
-        <a href="{{ userOverview }}">Followers <span>{{ followerNum }}</span></a>
-        <a href="{{ userOverview }}">Following <span>{{ followingNum }}</span></a>
+        <a href="{{ userOverview }}">Repositories <span class="counter">{{ repoNum }}</span></a>
+        <a href="{{ userOverview }}">Stars <span class="counter">{{ starNum }}</span></a>
+        <a href="{{ userOverview }}">Followers <span class="counter">{{ followerNum }}</span></a>
+        <a href="{{ userOverview }}">Following <span class="counter">{{ followingNum }}</span></a>
       </div>
 
     </script>
