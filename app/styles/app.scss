@@ -51,6 +51,7 @@ img {
 
 .main-spacer{
   margin-top: 24px;
+  max-width: 1012px;
 }
 
 .profile-pic{
@@ -76,17 +77,29 @@ img {
   line-height: 24px;
 }
 
+.email-box{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid $bordergray;
+  border-bottom: 1px solid $bordergray;
+}
+
+h6{
+  font-size: 16px;
+  color: #333333;
+}
+
 .bio{
+  display: inline-block;
   font-size: 14px;
   color: #767676;
+  padding-bottom: 16px;
 }
 
 .staticbar{
   height: 62px;
   display: table-cell;
   vertical-align: middle;
-  border-bottom: 1px solid $bordergray;
-  width:80%;
 }
 
 .user-links > a {
@@ -103,8 +116,8 @@ img {
   padding-top: 16px;
   padding-bottom: 16px;
   width: 100%;
+  border-top: 1px solid $bordergray;
   border-bottom: 1px solid $bordergray;
-  width: 83%;
 }
 
 .new-repo{
@@ -142,6 +155,10 @@ h3 {
   display: inline-block;
   font-size: 20px;
   font-weight: 600;
+}
+
+.repo-template{
+  border-bottom: 1px solid $bordergray;
 }
 
 .bargraph{
