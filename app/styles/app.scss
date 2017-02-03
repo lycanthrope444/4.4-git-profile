@@ -19,13 +19,29 @@ img {
   max-width: 100%;
 }
 
-.header{
+.header-fill{
   background-color: $bannergray;
+  border-bottom: 1px solid $bordergray;
+}
+
+.header{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .github-search{
-  width:354px;
+  width:33%;
   display: inline-block;
+  line-height: 20px;
+}
+
+.github-searchbar{
+  max-height: 26px;
+}
+
+.nav-item{
+  text-decoration: none;
+  color: #333333;
 }
 
 .main-spacer{
@@ -64,6 +80,10 @@ img {
   margin-left: 5px;
 }
 
+.repo-img{
+  color: white;
+}
+
 .counter{
   padding: 2px 5px;
   font-size: 12px;
@@ -80,6 +100,8 @@ img {
 
 h3 {
   display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .bargraph{
