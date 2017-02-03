@@ -28,6 +28,17 @@ $.ajax(personalInfoUrl).done(function(data){
     followingNum: data.following
   };
   $('.staticbar').append(template(userInfo));
+
+  //section for user profile - called here since
+  source = $('#sidebar-info').html();
+  template = Handlebars.compile(source);
+  var sidebarInfo = {
+    profilePic: data.avatar_url,
+    email: data.email,
+    name: data.name,
+    userName: data.login
+  };
+  $('.user-sidebar').append(template(sidebarInfo));
 });
 
 // Used to populate Repository Info

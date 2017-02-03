@@ -23,6 +23,11 @@ img {
   background-color: $bannergray;
 }
 
+.new-repo{
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
 #repo-template{
   width: 100%;
 }
@@ -31,6 +36,27 @@ h3 {
   display: inline-block;
 }
 
-#repo-template > img{
+.bargraph{
   float: right;
+}
+
+.colordot{
+  position: relative;
+  top:1px;
+  display: inline-block;
+  width:12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.CSS{
+  background-color: #563d7c;
+}
+
+.HTML{
+  background-color: #e44b23;
+}
+
+.JavaScript{
+  background-color: #f1e05a;
 }
