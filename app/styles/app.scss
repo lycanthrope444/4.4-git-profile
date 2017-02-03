@@ -44,6 +44,11 @@ img {
   color: #333333;
 }
 
+.side-buttons{
+  display: inline-block;
+  float: right;
+}
+
 .main-spacer{
   margin-top: 24px;
 }
@@ -76,8 +81,43 @@ img {
   color: #767676;
 }
 
+.staticbar{
+  height: 62px;
+  display: table-cell;
+  vertical-align: middle;
+  border-bottom: 1px solid $bordergray;
+  width:80%;
+}
+
+.user-links > a {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #767676;
+}
+
+.selected {
+
+}
+
+.utility-bar{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  border-bottom: 1px solid $bordergray;
+  width: 83%;
+}
+
 .new-repo{
   margin-left: 5px;
+}
+
+.repo-search{
+  width: 50%;
+  display: inline-block;
+}
+
+.right-buttons{
+  float: right;
 }
 
 .repo-img{

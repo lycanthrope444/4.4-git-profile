@@ -25,20 +25,21 @@
                 <a class="nav-item" href="#">Issues</a>
                 <a class="nav-item" href="#">Gist</a>
                 <!-- Buttons on Side of Header -->
-                <div class="btn-group">
+                <div class="side-buttons">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle top-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="images/plus.svg" alt=""> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">New repository</a></li>
+                      <li><a href="#">Import repository</a></li>
+                      <li><a href="#">New gist</a></li>
+                      <li><a href="#">New organization</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
                   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    + <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">New repository</a></li>
-                    <li><a href="#">Import repository</a></li>
-                    <li><a href="#">New gist</a></li>
-                    <li><a href="#">New organization</a></li>
-                  </ul>
-                </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action <span class="caret"></span>
+                     Profile Pic<span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
                     <span>Signed in as</span>
@@ -52,6 +53,7 @@
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Sign out</a></li>
                   </ul>
+                </div>
                 </div>
               </div>
             </div>
@@ -78,54 +80,54 @@
                 </div>
               </div>
               <!-- Utility Bar -->
-              <div class="row">
+              <!-- <div class="row"> -->
                 <div class="utility-bar">
-                  <form action="">
-                    <div class="col-md-6">
-                      <input type="text" class="form-control" placeholder="Search repositories...">
-                    </div>
+                  <form class="repo-search" action="">
+                    <input type="text" class="form-control" placeholder="Search repositories...">
                   </form>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Type: <span>All</span> <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      Select Type:
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">All</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Public</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Private</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Sources</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Forks</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Mirrors</a></li>
-                    </ul>
+                  <div class="right-buttons">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type: <span>All</span> <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        Select Type:
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">All</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Public</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Private</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Sources</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Forks</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Mirrors</a></li>
+                      </ul>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language: <span>All</span> <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <span>Select Language:</span>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">All</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">CSS</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">HTML</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Ruby</a></li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-success new-repo"><img class = "repo-img" src="images/repo.svg" alt=""> New</button>
                   </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Language: <span>All</span> <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <span>Select Language:</span>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">All</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">CSS</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">HTML</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Javascript</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Ruby</a></li>
-                    </ul>
-                  </div>
-                  <button type="button" class="btn btn-success new-repo"><img class = "repo-img" src="images/repo.svg" alt=""> New</button>
                 </div>
-              </div>
+              <!-- </div> -->
               <!-- List of Repos -->
               <div class="repo-list">
 
