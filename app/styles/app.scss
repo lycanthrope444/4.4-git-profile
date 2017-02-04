@@ -27,6 +27,7 @@ img {
 .header{
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 1012px;
 }
 
 .github-search{
@@ -42,11 +43,20 @@ img {
 .nav-item{
   text-decoration: none;
   color: #333333;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .side-buttons{
   display: inline-block;
   float: right;
+}
+
+.top-btn{
+  border: none;
+  background-color: inherit;
+
 }
 
 .main-spacer{
@@ -120,8 +130,13 @@ h6{
   border-bottom: 1px solid $bordergray;
 }
 
+.shaded-btn{
+  background-image: linear-gradient(#fcfcfc, #eee);
+}
+
 .new-repo{
   margin-left: 5px;
+  background-image: linear-gradient(#85d063, #4f992f);
 }
 
 .repo-search{
@@ -184,4 +199,25 @@ h3 {
 
 .JavaScript{
   background-color: #f1e05a;
+}
+
+footer{
+  border-top: 1px solid $bordergray;
+  font-size: 12px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+
+.copyright{
+  color: #767676;
+}
+
+.rightlinks{
+  float:right;
+}
+
+.footercat{
+  position: absolute;
+  left: 50%;
 }
