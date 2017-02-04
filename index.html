@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>4 4 git profile</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="wrapper">
+      <div class="header-fill">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header">
+                <!-- Github Logo -->
+                <img src="images/mark-github.svg" alt="">
+                <form action="submit" class="github-search">
+                <!-- <div class="col-xs-4 col-sm-4 col-md-4"> -->
+                  <input type="text" class="form-control github-searchbar" placeholder="Search GitHub">
+                <!-- </div> -->
+                </form>
+                <a class="nav-item" href="#">Pull Requests</a>
+                <a class="nav-item" href="#">Issues</a>
+                <a class="nav-item" href="#">Gist</a>
+                <!-- Buttons on Side of Header -->
+                <div class="side-buttons">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle top-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="images/plus.svg" alt=""> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">New repository</a></li>
+                      <li><a href="#">Import repository</a></li>
+                      <li><a href="#">New gist</a></li>
+                      <li><a href="#">New organization</a></li>
+                    </ul>
+                  </div>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle top-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class = "tinypic"></span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <span>Signed in as</span>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Your profile</a></li>
+                    <li><a href="#">Your stars</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Sign out</a></li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Main Section -->
+      <div class="container">
+        <div class="main-spacer">
+          <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-sm-3 col-xs-3">
+              <div class="user-sidebar">
+              </div>
+            </div>
+            <!-- Main Navigation -->
+            <div class="col-md-9 col-sm-9 col-xs-9">
+              <!-- Dynamic Search Bar -->
+              <div id="scroller-anchor"></div>
+              <div id="scroller" class="staticbar"></div>
+              <!-- Utility Bar -->
+              <!-- <div class="row"> -->
+                <div class="utility-bar">
+                  <form class="repo-search" action="">
+                    <input type="text" class="form-control" placeholder="Search repositories...">
+                  </form>
+                  <div class="right-buttons">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle shaded-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type: <span>All</span> <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        Select Type:
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">All</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Public</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Private</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Sources</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Forks</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Mirrors</a></li>
+                      </ul>
+                    </div>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle shaded-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language: <span>All</span> <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <span>Select Language:</span>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">All</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">CSS</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">HTML</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Ruby</a></li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-success new-repo"><img class = "repo-img" src="images/repo.svg" alt=""> New</button>
+                  </div>
+                </div>
+              <!-- </div> -->
+              <!-- List of Repos -->
+              <div class="repo-list">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+          <div class="row">
+            <div class="col-md-12">
+              <span class="copyright">© 2017 GitHub, Inc.</span>
+              <a href="https://help.github.com/articles/github-terms-of-service/">Terms</a>
+              <a href="https://help.github.com/articles/github-privacy-statement/">Privacy</a>
+              <a href="https://help.github.com/articles/github-security/">Security</a>
+              <a href="https://status.github.com/">Status</a>
+              <a href="https://help.github.com/">Help</a>
+              <a href="https://github.com/"><img src="images/mark-githubfooter.svg" alt="" class ="footercat"></a>
+              <div class="rightlinks">
+                <a href="https://github.com/contact">Contact GitHub</a>
+                <a href="https://developer.github.com/">API</a>
+                <a href="https://services.github.com/">Training</a>
+                <a href="https://github.myshopify.com/">Shop</a>
+                <a href="https://github.com/blog">Blog</a>
+                <a href="https://github.com/about">About</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- User Sidebar -->
+    <script id="sidebar-info" type="text/x-handlebars-template">
+      <img class="profile-pic" src="{{ profilePic }}" alt="">
+      <!-- <div class="sideanchor" id="sideanchor"></div>
+      <div class="stickysidebar" id="stickysidebar">Placeholder</div> -->
+      <div class="name-holder">
+        <span class="sidebar-name">{{ name }}</span>
+        <span class="sidebar-user">{{ userName }}</span>
+      </div>
+      <span class="bio">{{ bio }}</span>
+      <div class="email-box">
+        <div>
+          <img src="images/location.svg" alt=""><span class="loc-email">{{ location }}</span>
+        </div>
+        <img src="images/mail.svg" alt=""><a class="sidebar-email" href="#"><span class="loc-email">{{ email }}</span></a>
+      </div>
+      <div class="org-box">
+        <h6>Organizations</h6>
+        <div class="org-row">
+
+        </div>
+      </div>
+    </script>
+    <!-- Repo Template -->
+    <script id="repo-template" type="text/x-handlebars-template">
+      <div class="repo-template">
+        <a href="{{ url }}"><h3>{{ name }}</h3></a>
+        <div>
+          <span class="{{language}} colordot"></span>
+          <span>{{ language}}</span>
+          <span>{{ updated }}</span>
+        </div>
+        <!-- <img class = "bargraph" src="https://unsplash.it/125/100" alt=""> -->
+      </div>
+    </script>
+
+    <!-- User Repo Info -->
+    <script id="user-links" type="text/x-handlebars-template">
+      <div class="user-links">
+        <a href="{{ userOverview }}">Overview</a>
+        <a href="{{ userOverview }}">Repositories <span class="counter">{{ repoNum }}</span></a>
+        <a href="{{ userOverview }}">Stars <span class="counter">{{ starNum }}</span></a>
+        <a href="{{ userOverview }}">Followers <span class="counter">{{ followerNum }}</span></a>
+        <a href="{{ userOverview }}">Following <span class="counter">{{ followingNum }}</span></a>
+      </div>
+    </script>
+    <!-- Org Info -->
+    <script id="orgs-info" type="text/x-handlebars-template">
+      <a href="{{orgUrl}}">
+        <img src="{{orgPic}}" alt="" class="org-pic">
+      </a>
+    </script>
+
+    <!-- Tiny Profile Pic -->
+    <script id = "tinypic" type="text/x-handlebars-template">
+      <img src="{{profilePic}}" alt=""/>
+    </script>
+
+    <script src="js/bundle.js"></script>
+
+
+  </body>
+</html>
