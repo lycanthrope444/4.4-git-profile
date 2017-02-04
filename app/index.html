@@ -39,7 +39,7 @@
                   </div>
                   <div class="btn-group">
                   <button type="button" class="btn btn-default dropdown-toggle top-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Profile Pic<span class="caret"></span>
+                     <span class = "tinypic"></span><span class="caret"></span>
                   </button>
                   <ul class="dropdown-menu">
                     <span>Signed in as</span>
@@ -158,6 +158,8 @@
     <!-- User Sidebar -->
     <script id="sidebar-info" type="text/x-handlebars-template">
       <img class="profile-pic" src="{{ profilePic }}" alt="">
+      <!-- <div class="sideanchor" id="sideanchor"></div>
+      <div class="stickysidebar" id="stickysidebar">Placeholder</div> -->
       <div class="name-holder">
         <span class="sidebar-name">{{ name }}</span>
         <span class="sidebar-user">{{ userName }}</span>
@@ -183,7 +185,7 @@
         <div>
           <span class="{{language}} colordot"></span>
           <span>{{ language}}</span>
-          <span>Last Update</span>
+          <span>{{ updated }}</span>
         </div>
         <!-- <img class = "bargraph" src="https://unsplash.it/125/100" alt=""> -->
       </div>
@@ -204,6 +206,11 @@
       <a href="{{orgUrl}}">
         <img src="{{orgPic}}" alt="" class="org-pic">
       </a>
+    </script>
+
+    <!-- Tiny Profile Pic -->
+    <script id = "tinypic" type="text/x-handlebars-template">
+      <img src="{{profilePic}}" alt=""/>
     </script>
 
     <script src="js/bundle.js"></script>

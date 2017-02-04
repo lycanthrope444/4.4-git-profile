@@ -56,7 +56,6 @@ img {
 .top-btn{
   border: none;
   background-color: inherit;
-
 }
 
 .main-spacer{
@@ -67,6 +66,16 @@ img {
 .profile-pic{
   border-radius: 5px;
 }
+
+.tinypic > img{
+  height:20px;
+  border-radius: 3px;
+}
+// .stickysidebar {
+//   // display: none;
+//   position: fixed;
+//   top: 0px;
+// }
 
 .name-holder{
   margin-top: 16px;
@@ -129,18 +138,11 @@ h6{
   color: #767676;
 }
 
-#scroller-anchor{
-}
-
 #scroller{
   z-index: 100;
   border-bottom: 1px solid $bordergray;
   background-color: white;
   width: 698px;
-}
-
-.selected {
-
 }
 
 .utility-bar{
