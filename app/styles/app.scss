@@ -87,6 +87,11 @@ img {
   line-height: 24px;
 }
 
+.loc-email{
+  display: inline-block;
+  margin-left: 8px;
+}
+
 .email-box{
   padding-top: 16px;
   padding-bottom: 16px;
@@ -106,6 +111,12 @@ h6{
   padding-bottom: 16px;
 }
 
+.org-pic{
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 3px;
+}
+
 .staticbar{
   height: 62px;
   display: table-cell;
@@ -118,6 +129,16 @@ h6{
   color: #767676;
 }
 
+#scroller-anchor{
+}
+
+#scroller{
+  z-index: 100;
+  border-bottom: 1px solid $bordergray;
+  background-color: white;
+  width: 698px;
+}
+
 .selected {
 
 }
@@ -126,7 +147,6 @@ h6{
   padding-top: 16px;
   padding-bottom: 16px;
   width: 100%;
-  border-top: 1px solid $bordergray;
   border-bottom: 1px solid $bordergray;
 }
 
@@ -176,7 +196,10 @@ h3 {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid $bordergray;
+  color: #767676;
+  font-size: 12px;
 }
+
 
 .bargraph{
   float: right;
@@ -201,6 +224,10 @@ h3 {
 
 .JavaScript{
   background-color: #f1e05a;
+}
+
+.Ruby{
+  background-color: #701516;
 }
 
 footer{

@@ -67,18 +67,13 @@
             <!-- Sidebar -->
             <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="user-sidebar">
-
-
               </div>
             </div>
             <!-- Main Navigation -->
             <div class="col-md-9 col-sm-9 col-xs-9">
-              <div class="row">
-                <!-- Dynamic Search Bar -->
-                <div class="staticbar">
-
-                </div>
-              </div>
+              <!-- Dynamic Search Bar -->
+              <div id="scroller-anchor"></div>
+              <div id="scroller" class="staticbar"></div>
               <!-- Utility Bar -->
               <!-- <div class="row"> -->
                 <div class="utility-bar">
@@ -169,7 +164,10 @@
       </div>
       <span class="bio">{{ bio }}</span>
       <div class="email-box">
-        <img src="images/mail.svg" alt=""><a class="sidebar-email" href="#">{{ email }}</a>
+        <div>
+          <img src="images/location.svg" alt=""><span class="loc-email">{{ location }}</span>
+        </div>
+        <img src="images/mail.svg" alt=""><a class="sidebar-email" href="#"><span class="loc-email">{{ email }}</span></a>
       </div>
       <div class="org-box">
         <h6>Organizations</h6>
@@ -183,7 +181,8 @@
       <div class="repo-template">
         <a href="{{ url }}"><h3>{{ name }}</h3></a>
         <div>
-          <span class="{{language}} colordot"></span><span>{{ language}}</span>
+          <span class="{{language}} colordot"></span>
+          <span>{{ language}}</span>
           <span>Last Update</span>
         </div>
         <!-- <img class = "bargraph" src="https://unsplash.it/125/100" alt=""> -->
@@ -203,10 +202,12 @@
     <!-- Org Info -->
     <script id="orgs-info" type="text/x-handlebars-template">
       <a href="{{orgUrl}}">
-        <img src="{{orgPic}}" alt="">
+        <img src="{{orgPic}}" alt="" class="org-pic">
       </a>
     </script>
 
     <script src="js/bundle.js"></script>
+
+
   </body>
 </html>

@@ -35,6 +35,7 @@ $.ajax(personalInfoUrl).done(function(data){
   template = Handlebars.compile(source);
   var sidebarInfo = {
     profilePic: data.avatar_url,
+    location: data.location,
     email: data.email,
     bio: data.bio,
     name: data.name,
@@ -74,6 +75,44 @@ $.ajax(orgUrl).done(function(data){
     console.log(orgsInfo);
     $(".org-row").append(orgTemplate(orgsInfo));
   });
+});
 
+// Nav-bar sticky
+// http://stackoverflow.com/questions/1216114/how-can-i-make-a-div-stick-to-the-top-of-the-screen-once-its-been-scrolled-to?rq=1
+//
+function moveScroller() {
+    var $anchor = $("#scroller-anchor");
+    var $scroller = $('#scroller');
+    console.log($anchor);
+    console.log($scroller);
+    var move = function() {
+        var st = $(window).scrollTop();
+        var ot = $anchor.offset().top;
+        if(st > ot) {
+            $scroller.css({
+                position: "fixed",
+                top: "0px",
+                padding: "24px"
+            });
+            $anchor.css({
+              height: "68px"
+            });
+        } else {
+            if(st <= ot) {
+                $scroller.css({
+                    position: "relative",
+                    top: ""
+                });
+                $anchor.css({
+                  height: "0px"
+                });
+            }
+        }
+    };
+    $(window).scroll(move);
+    move();
+}
 
+$(function() {
+  moveScroller();
 });
