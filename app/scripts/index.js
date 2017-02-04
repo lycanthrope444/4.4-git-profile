@@ -50,7 +50,7 @@ $.ajax(repoInfoUrl).done(function(data){
   var repoTemplate = Handlebars.compile(repoSource);
   var sortedRepos = _.sortBy(data, "updated_at");
   _.last(sortedRepos, sortedRepos.length);
-  // console.log(sortedRepos);
+  console.log(sortedRepos);
   _.each(sortedRepos, function(info){
     var repoInfo = {
       name: info.name,
@@ -64,4 +64,16 @@ $.ajax(repoInfoUrl).done(function(data){
 
 $.ajax(orgUrl).done(function(data){
   console.log(data);
+  var orgSource = $('#orgs-info').html();
+  var orgTemplate = Handlebars.compile(orgSource);
+  _.each(data, function(info){
+    var orgsInfo = {
+      orgUrl: info.url,
+      orgPic: info.avatar_url
+    };
+    console.log(orgsInfo);
+    $(".org-row").append(orgTemplate(orgsInfo));
+  });
+
+
 });

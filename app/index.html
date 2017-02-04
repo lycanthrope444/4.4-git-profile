@@ -173,6 +173,9 @@
       </div>
       <div class="org-box">
         <h6>Organizations</h6>
+        <div class="org-row">
+
+        </div>
       </div>
     </script>
     <!-- Repo Template -->
@@ -196,8 +199,14 @@
         <a href="{{ userOverview }}">Followers <span class="counter">{{ followerNum }}</span></a>
         <a href="{{ userOverview }}">Following <span class="counter">{{ followingNum }}</span></a>
       </div>
-
     </script>
+    <!-- Org Info -->
+    <script id="orgs-info" type="text/x-handlebars-template">
+      <a href="{{orgUrl}}">
+        <img src="{{orgPic}}" alt="">
+      </a>
+    </script>
+
     <script src="js/bundle.js"></script>
   </body>
 </html>
