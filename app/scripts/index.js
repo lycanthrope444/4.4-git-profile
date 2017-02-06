@@ -7,7 +7,7 @@ var personalInfoUrl = "https://api.github.com/users/lycanthrope444";
 var repoInfoUrl = "https://api.github.com/users/lycanthrope444/repos";
 var orgUrl = "https://api.github.com/users/lycanthrope444/orgs";
 var starsUrl = "https://api.github.com/users/lycanthrope444/starred";
-var githubtoken = require('./gitapikey.js');
+var githubtoken ;//= require('./gitapikey.js');
 
 // Send auth token to github if token is provided
 if(githubtoken !== undefined){
